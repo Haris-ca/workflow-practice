@@ -3,7 +3,7 @@ name: Scheduled Run
 on:
   schedule:
     - cron: '13 11 * * 0-6'      # At 11:13 on every day-of-week from Sunday through Saturday
-    - cron: '0 9 * * 1'      # every Monday at 09:00 UTC
+    # - cron: '0 9 * * 1'      # every Monday at 09:00 UTC
 
 jobs:
   scheduled-task:
