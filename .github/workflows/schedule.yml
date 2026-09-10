@@ -1,10 +1,11 @@
 name: Scheduled Run
 
 on:
+  
   schedule:
     # Runs at 11:54 UTC (5:24 PM IST) every day
     - cron: '54 11 * * *'
-
+  workflow_dispatch: 
 jobs:
   scheduled-task:
     runs-on: ubuntu-latest
