@@ -1,0 +1,16 @@
+name: My GitHub Workflow
+
+on: 
+  push:
+jobs:
+  JOB1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Print working directory
+        run: pwd
+    
+  
